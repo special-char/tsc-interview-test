@@ -1,0 +1,46 @@
+@layer components {
+
+    #head {
+        @apply lg:bg-purple-200 ;
+
+        &>.head__container {
+            @apply flex container justify-between px-3 lg:px-0 items-center h-16;
+
+            &>.head__logo {
+                @apply flex gap-2 items-center;
+
+                &>img {
+                    @apply w-10 h-10
+                }
+
+                &>.name {
+                    @apply text-2xl flex items-center lg:hidden;
+
+                    &>.name2 {
+                        @apply font-sans font-semibold;
+                    }
+                }
+
+                &>.name1{
+                    @apply text-2xl font-sans font-semibold hidden lg:block;
+                }
+            }
+
+            &>.nav__button {
+                @apply  w-10 h-10 lg:hidden;
+
+                &>a {
+                    &>.top {
+                        @apply bg-black border-2 border-black  mt-2;
+                    }
+                    &>.middle {
+                        @apply bg-black border-2 border-black  mt-2;
+                    }
+                    &>.bottom {
+                        @apply bg-black border-2 border-black  mt-2;
+                    }
+                }
+            }
+        }
+    }
+}
