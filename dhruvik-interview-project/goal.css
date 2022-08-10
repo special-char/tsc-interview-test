@@ -1,0 +1,49 @@
+@layer components{
+    #goals{
+        @apply pt-0 h-auto sm:bg-purple-200 sm:pt-10 sm:pb-0;
+        &>.goals__container1{
+            @apply hidden   sm:container sm:flex sm:flex-wrap sm:items-center sm:justify-center;
+            &>.goals__content{
+                @apply max-w-xl flex flex-col justify-center items-center;
+
+                &>h3{
+                    @apply mb-6 text-base tracking-[0.6rem];
+                }
+                &>h2{
+                    @apply mb-6 text-7xl font-sans font-black;
+                }
+                &>button{
+                    @apply  border-4 rounded-full border-red-400 px-6 py-3 text-sm font-sans font-bold;
+                }
+            }
+            &>.goals__image{
+                @apply   w-[640px] h-[720px] overflow-hidden;
+            }
+        }
+        &>.goals__container2{
+            @apply z-0 relative aspect-image w-full py-5 bg-purple-200 bg-opacity-50 sm:hidden  overflow-hidden;
+
+            &>img{
+                @apply z-0;
+            }
+            &>.bg-wrapper{
+                @apply absolute z-10 inset-0 bg-purple-200 bg-opacity-70;
+            }
+
+            &>.content{
+
+                @apply inset-0 absolute z-20 flex flex-1 flex-col justify-center items-center;
+                &>h3{
+                    @apply mb-4 sm:mb-6 text-black text-base tracking-[0.6rem];
+                }
+                &>h2{
+                    @apply  mb-6 text-5xl font-sans font-black;
+                }
+                &>button{
+                    @apply  border-4 rounded-full border-red-400 px-6 py-3 text-sm font-sans font-bold;
+                }
+            }
+        }
+        
+    }
+}

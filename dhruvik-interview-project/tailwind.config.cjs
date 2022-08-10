@@ -11,6 +11,9 @@ module.exports = {
         "sm": "1280px"
       },
     },
+    aspectRatio: {
+      image:'4/3',
+    },
     extend: {},
   },
   plugins: [

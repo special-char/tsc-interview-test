@@ -1,10 +1,10 @@
 @layer components {
 
     #head {
-        @apply lg:bg-purple-200 ;
+        @apply lg:bg-purple-200 overflow-hidden;
 
         &>.head__container {
-            @apply flex container justify-between px-3 lg:px-0 items-center h-16;
+            @apply flex container justify-between px-3 lg:px-3 items-center h-16;
 
             &>.head__logo {
                 @apply flex gap-2 items-center;
@@ -30,15 +30,27 @@
                 @apply  w-10 h-10 lg:hidden;
 
                 &>a {
-                    &>.top {
+                    &>.line {
                         @apply bg-black border-2 border-black  mt-2;
                     }
-                    &>.middle {
-                        @apply bg-black border-2 border-black  mt-2;
-                    }
-                    &>.bottom {
-                        @apply bg-black border-2 border-black  mt-2;
-                    }
+                    
+                }
+            }
+
+            &>nav{
+                @apply hidden lg:block;
+                &>ul{
+                    @apply flex gap-8 list-disc;
+                    
+                    &>li{
+                        @apply pl-2 first:list-none;
+
+                        &>a{
+                            @apply font-sans font-medium;
+                        }
+                    }    
+                    
+                    
                 }
             }
         }
