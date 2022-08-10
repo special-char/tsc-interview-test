@@ -1,6 +1,6 @@
 @layer components{
     #goals{
-        @apply pt-0 h-auto sm:bg-purple-200 sm:pt-10 sm:pb-0;
+        @apply pt-0 h-auto sm:bg-gray-200 sm:pt-10 sm:pb-0;
         &>.goals__container1{
             @apply hidden   sm:container sm:flex sm:flex-wrap sm:items-center sm:justify-center;
             &>.goals__content{
@@ -21,13 +21,13 @@
             }
         }
         &>.goals__container2{
-            @apply z-0 relative aspect-image w-full py-5 bg-purple-200 bg-opacity-50 sm:hidden  overflow-hidden;
+            @apply z-0 relative aspect-image w-full py-5 bg-gray-200 bg-opacity-50 sm:hidden  overflow-hidden;
 
             &>img{
                 @apply z-0;
             }
             &>.bg-wrapper{
-                @apply absolute z-10 inset-0 bg-purple-200 bg-opacity-70;
+                @apply absolute z-10 inset-0 bg-gray-200 bg-opacity-70;
             }
 
             &>.content{
