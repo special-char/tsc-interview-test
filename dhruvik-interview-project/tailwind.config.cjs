@@ -8,7 +8,8 @@ module.exports = {
     container: {
       center: true,
       screens: {
-        "sm": "1520px"
+        "sm": "1520px",
+        
       },
     },
     aspectRatio: {
