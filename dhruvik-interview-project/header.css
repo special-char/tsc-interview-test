@@ -4,7 +4,7 @@
         @apply lg:bg-gray-200 overflow-hidden;
 
         &>.head__container {
-            @apply flex container justify-between px-3 lg:px-3 items-center h-16;
+            @apply flex container justify-between px-3 lg:px-28 items-center h-16;
 
             &>.head__logo {
                 @apply flex gap-2 items-center;

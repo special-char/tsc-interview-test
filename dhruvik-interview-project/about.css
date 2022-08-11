@@ -1,10 +1,10 @@
 @layer components {
 
     #about {
-        @apply h-auto;
+        @apply bg-gray-200  h-auto;
 
         &>.about__container {
-            @apply flex flex-wrap  ;
+            @apply  container  flex flex-wrap  ;
 
             &>.about__card{
                 @apply flex gap-2 py-10 sm:py-28 ;
@@ -22,13 +22,13 @@
                 
             }
             &>.card1{
-                @apply flex-1 basis-80 bg-red-400 px-4;
+                @apply flex-1 basis-96 bg-red-400 px-4;
             }
             &>.card2{
-                @apply flex-1 basis-80 bg-gray-200 px-4;
+                @apply flex-1 basis-96 bg-gray-200 px-4;
             }
             &>.card3{
-                @apply flex-1 basis-80 bg-white px-4;
+                @apply flex-1 basis-96 bg-white px-4;
             }
 
         }
