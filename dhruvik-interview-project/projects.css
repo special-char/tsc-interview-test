@@ -1,0 +1,45 @@
+@layer components{
+    #projects{
+        
+        &>.projects__card__right{
+            @apply flex flex-col justify-center items-center lg:flex-row lg:justify-end lg:mr-10  ;
+            &>.year{
+                @apply text-2xl font-sans text-red-500 mb-2 font-bold lg:mx-4;
+            }
+            &>.card__img{
+                @apply aspect-square w-20 rounded-full mb-1 overflow-hidden;
+            }
+            &>.card__desc{
+                @apply text-center py-3 lg:text-left lg:mx-4;
+
+                &>.project__name{
+                    @apply font-sans font-semibold text-2xl;
+                }
+                &>p{
+                    @apply my-3;
+                }
+
+            }
+        }
+        &>.projects__card__left{
+            @apply flex flex-col justify-center items-center lg:flex-row-reverse lg:justify-end ;
+            &>.year{
+                @apply text-2xl font-sans text-red-500 mb-2 font-bold lg:mx-4;
+            }
+            &>.card__img{
+                @apply aspect-square w-20 rounded-full mb-1 overflow-hidden;
+            }
+            &>.card__desc{
+                @apply text-center py-3 lg:text-right lg:mx-4;
+
+                &>.project__name{
+                    @apply font-sans font-semibold text-2xl;
+                }
+                &>p{
+                    @apply my-3;
+                }
+
+            }
+        }
+    }
+}
