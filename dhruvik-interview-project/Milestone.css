@@ -1,7 +1,7 @@
 @layer components{
-    #projects{
+    #Milestone{
         @apply py-10;
-        &>.project__content{
+        &>.Milestone__content{
             @apply flex flex-col justify-center items-center;
 
             &>h3{
@@ -12,7 +12,7 @@
                 @apply max-w-xl my-8 px-3 text-center;
             }
         }
-        &>.projects__card__right{
+        &>.Milestone__card__right{
             @apply flex flex-col justify-center items-center lg:flex-row lg:pl-[274px]  ;
             &>.year{
                 @apply text-2xl font-sans text-red-500 mb-2 font-bold lg:mx-4;
@@ -42,7 +42,7 @@
                 @apply h-3 mb-1 max-w-[2px]  border-2 border-gray-200 bg-gray-200;
             }
         }
-        &>.projects__card__left{
+        &>.Milestone__card__left{
             @apply flex flex-col justify-center items-center lg:flex-row-reverse lg:pr-[274px]  ;
             &>.year{
                 @apply text-2xl font-sans text-red-500 mb-2 font-bold lg:mx-4;
