@@ -6,7 +6,7 @@
             @apply bg-slate-800 container flex flex-wrap  justify-center items-center;
 
             &>.WeAre__image{
-                @apply flex-shrink-0 aspect-image w-full lg:aspect-square lg:w-1/2 ;
+                @apply flex-shrink-0 aspect-eimage w-full md:aspect-dimage md:w-1/2 lg:aspect-square ;
                 &>img{
                     @apply w-full h-full;
                 }

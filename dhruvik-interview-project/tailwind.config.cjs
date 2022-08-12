@@ -17,6 +17,8 @@ module.exports = {
       square:'1/1',
       vimage:'3/4',
       cimage: '4/2',
+      dimage: '2/3',
+      eimage: '3/2',
     },
     extend: {},
   },
