@@ -16,7 +16,10 @@ module.exports = {
     },
 
     aspectRatio: {
-      image:'4/3',
+      image:'4 / 3',
+      aimage:'3 / 2',
+      bimage:'2 / 3',
+      square:'1 / 1',
     },
 
   extend: {},

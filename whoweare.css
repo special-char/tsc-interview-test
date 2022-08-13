@@ -1,0 +1,37 @@
+@layer components{
+
+    #WhoWeAre{
+        @apply h-auto;
+
+        & > .WhoWeAre__weare{
+            @apply bg-slate-800 container flex flex-wrap  justify-center items-center;
+
+            & > .WhoWeAre__image{
+                  @apply flex-shrink-0 aspect-aimage w-full md:aspect-bimage md:w-1/2 lg:aspect-square ;
+
+                & > img{
+                    @apply w-full h-full;
+                }
+            }
+
+            & > .WhoWeAre__content{
+                @apply pl-10 pr-3 py-14 flex-1 basis-1/2;
+
+                & > h2{
+                    @apply text-3xl mb-10 sm:text-5xl font-sans font-semibold text-white;
+                }
+
+                & > .para1{
+                    @apply w-full max-w-md mb-10 text-white font-sans text-base;
+                }
+
+                & > .para2{
+                    @apply w-full max-w-md mb-10 text-gray-500 font-sans text-base;
+                }
+                & > button{
+                    @apply text-white border-4 rounded-full border-red-400 px-10 py-4 text-sm font-sans hover:bg-red-400 hover:text-black;
+                }
+            }
+        }
+    }
+}

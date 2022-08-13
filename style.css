@@ -3,6 +3,8 @@
 @import "tailwindcss/components";
 @import "./header.css";
 @import "./ourgoals.css";
+@import "./aboutus.css";
+@import "./whoweare.css";
 
 @import "tailwindcss/utilities";
 
