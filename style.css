@@ -1,6 +1,9 @@
 @import "tailwindcss/base";
+
 @import "tailwindcss/components";
 @import "./header.css";
+@import "./ourgoals.css";
+
 @import "tailwindcss/utilities";
 
 

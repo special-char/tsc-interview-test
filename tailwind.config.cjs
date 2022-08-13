@@ -15,6 +15,10 @@ module.exports = {
       },
     },
 
+    aspectRatio: {
+      image:'4/3',
+    },
+
   extend: {},
   },
   plugins: [
