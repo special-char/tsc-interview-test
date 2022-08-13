@@ -4,7 +4,7 @@
         @apply bg-slate-900;
 
         &>.footer__container{
-            @apply py-10  flex flex-col justify-center items-center gap-5 lg:gap-0 lg:flex-row lg:justify-around;
+            @apply container py-10  flex flex-col justify-center items-center gap-5 lg:gap-0 lg:flex-row lg:justify-around;
 
             &>nav{
                 @apply px-3;

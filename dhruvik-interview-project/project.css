@@ -3,7 +3,7 @@
         @apply h-auto bg-slate-800;
 
         &>.project__container{
-            @apply flex flex-col justify-center items-center py-20 ;
+            @apply container flex flex-col justify-center items-center py-20 ;
 
             &>h3{
                 @apply text-white font-sans text-4xl font-semibold mb-16;
