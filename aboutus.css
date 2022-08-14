@@ -4,10 +4,10 @@
         @apply bg-gray-200  h-auto;
 
         & > .aboutus__about {
-            @apply  container  flex flex-wrap  ;
+            @apply container flex flex-wrap;
 
             & > .aboutus__card{
-                @apply flex gap-2 py-20 sm:py-16 justify-center ;
+                @apply flex gap-2 py-20 sm:py-16 justify-center;
 
                 & > .card__content{
 

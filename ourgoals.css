@@ -8,11 +8,11 @@
             & > .ourgoals__content{
                 @apply max-w-lg flex flex-col justify-center items-start;
 
-                & > h3{
+                & > h2{
                     @apply text-base mb-5 tracking-[0.7rem];
                 }
 
-                &>h2{
+                &>h3{
                     @apply mb-7 text-7xl font-sans font-black;
                 }
 
@@ -40,11 +40,11 @@
             & > .content{
                 @apply inset-0 z-20 flex flex-1 flex-col justify-center items-center absolute;
 
-                & > h3{
-                    @apply text-base text-black mb-4 sm:mb-6 tracking-[0.7rem];
+                & > h2{
+                    @apply text-base text-black mb-4 sm:mb-6 tracking-[0.8rem];
                 }
 
-                &>h2{
+                &>h3{
                     @apply mb-7 text-7xl font-sans font-black;
                 }
 
