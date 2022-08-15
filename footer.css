@@ -3,7 +3,7 @@
         @apply bg-gray-800;
 
         & > .footer__content{
-            @apply py-10 flex items-center justify-around flex-1 gap-5;
+            @apply py-10 flex flex-wrap items-center justify-around flex-1 gap-5;
 
             & > nav{
 
