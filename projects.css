@@ -1,0 +1,41 @@
+@layer components {
+    #projects {
+       @apply py-16 bg-black h-auto; 
+       & h3 {
+        @apply text-center md:mb-16
+       }
+       & nav {
+        & ul {
+            @apply flex flex-wrap justify-center gap-8 text-white text-xs tracking-widest mb-12;
+
+            & li {
+                @apply first:text-pink
+            }
+        }
+       }
+       & div.project_content {
+        @apply grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 grid-rows-1 overflow-hidden relative;
+        & div.project_content_item:nth-child(2) {
+            @apply hidden sm:block;
+        }
+        & div.project_content_item:nth-child(3) {
+            @apply hidden md:block;
+        }
+        & div.project_content_item:nth-child(4) {
+            @apply hidden lg:block;
+        }
+        & div.project_content_item:nth-child(5) {
+            @apply hidden lg:block;
+        }
+        & div.Project_content_scroller1 {
+            @apply absolute aspect-square w-20 bg-pink z-10 top-[] left-[] rounded-full;
+        }
+        & div.Project_content_scroller2 {
+            @apply absolute aspect-square w-20 bg-pink z-10 top-[30%] right-[-9%] sm:right-[-7%] md:right-[-5%] lg:right-[-3%] rounded-full;
+        }
+    }
+    & button.btn {
+        @apply text-white mt-10 object-center mx-auto block
+    }
+    }
+} 

@@ -1,0 +1,19 @@
+{
+  "name": "umang_assignment",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.8",
+    "postcss": "^8.4.14",
+    "postcss-nesting": "^10.1.10",
+    "sass": "^1.54.0",
+    "tailwindcss": "^3.1.7",
+    "vite": "^3.0.0"
+  }
+}

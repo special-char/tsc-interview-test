@@ -1,0 +1,38 @@
+@layer components {
+    #banner {
+        @apply bg-secondary lg:px-16 xl:px-56;
+        &  div.banner_wrapper {
+        @apply  h-screen bg-[url(assets/images/slider-1.png)] bg-opacity-50 bg-no-repeat bg-right-top flex flex-col gap-5 pl-5 justify-center items-center md:items-start;
+
+        & span {
+            @apply text-[10px] tracking-[15px]
+        }
+    }
+}
+#profession {
+    @apply h-auto flex flex-wrap;
+    & div.pro_content {
+        @apply w-full md:basis-2/6 p-14 flex flex-wrap xl:flex-nowrap gap-8;
+
+
+        &div.pro_content:nth-child(1) {
+            @apply bg-pink;
+            & p {
+                @apply text-white;
+            }
+        }
+
+        &div.pro_content:nth-child(2) {
+            @apply bg-secondary1;
+        } 
+
+        &div.pro_content:nth-child(3) {
+            @apply bg-white;
+        }
+
+        & div.pro_content_desc {
+         @apply flex flex-col gap-4   
+        }
+    }
+}
+}

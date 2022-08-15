@@ -1,0 +1,24 @@
+@layer components {
+    #footer {
+        @apply h-auto py-14 px-20 bg-black;
+       & div.footer_wrapper {
+        @apply flex justify-evenly items-center flex-wrap gap-5 lg:gap-0;
+        & nav.footer_nav {
+            & ul.footer_nav_content {
+                @apply flex gap-5 md:list-disc text-xs flex-wrap justify-center items-center mb-8 md:mb-0;
+                & li {
+                    @apply first:list-none md:px-5 text-white;
+                }
+            }
+        }
+        & div.footer_contact_num {
+            & span:nth-child(1) {
+                @apply text-pink
+            }
+            & span:nth-child(2) {
+                @apply text-white;
+            }
+        }
+       }
+    }
+}

@@ -1,0 +1,26 @@
+@layer base {
+  body {
+    @apply font-sans;
+  }
+
+  h1 {
+    @apply mb-6 text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold;
+  }
+
+  h3 {
+    @apply text-3xl mb-10 xl:mb-10 lg:mb-3 md:mb-2 md:text-4xl lg:text-5xl font-sans font-semibold text-white;
+  }
+
+  h4 {
+    @apply text-lg sm:text-xl font-semibold;
+  }
+
+
+  p {
+    @apply mb-10 xl:mb-10 lg:mb-3 md:mb-2 md:pb-2 text-base;
+  }
+
+  p.small {
+    @apply mb-10 xl:mb-10 lg:mb-3 md:mb-2 md:pb-2 text-base text-primary;
+  }
+}
