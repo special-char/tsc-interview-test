@@ -27,11 +27,11 @@
         & div.project_content_item:nth-child(5) {
             @apply hidden lg:block;
         }
-        & div.Project_content_scroller1 {
-            @apply absolute aspect-square w-20 bg-pink z-10 top-[] left-[] rounded-full;
+        & div.project_content_scroller1 {
+            @apply absolute aspect-square w-[4.5rem] bg-pink z-10 top-[35%] sm:top-[35%] md:top-[31%] lg:top-[26%] xl:top-[30%] -left-10 rounded-full;
         }
-        & div.Project_content_scroller2 {
-            @apply absolute aspect-square w-20 bg-pink z-10 top-[30%] right-[-9%] sm:right-[-7%] md:right-[-5%] lg:right-[-3%] rounded-full;
+        & div.project_content_scroller2 {
+            @apply absolute aspect-square w-[4.5rem] bg-pink z-10 top-[35%] sm:top-[35%] md:top-[31%] lg:top-[26%] xl:top-[30%] -right-10 rounded-full;
         }
     }
     & button.btn {
