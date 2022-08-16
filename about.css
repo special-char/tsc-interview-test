@@ -1,10 +1,10 @@
 @layer components {
     #about {
         &>div.about_wrapper {
-            @apply w-full h-full md:flex flex-wrap justify-center;
+            @apply container md:flex flex-wrap justify-center;
 
             & div.about_image {
-                @apply h-full basis-1/2;
+                @apply  h-full basis-1/2;
 
                 &>img {
               }

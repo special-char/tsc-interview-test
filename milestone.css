@@ -1,6 +1,6 @@
 @layer components {
   #milestones {
-    @apply py-16;
+    @apply bg-white z-0 container py-16;
     & h3 {
       @apply text-black text-center;
     }

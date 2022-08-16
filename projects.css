@@ -1,6 +1,6 @@
 @layer components {
     #projects {
-       @apply py-16 bg-black h-auto; 
+       @apply container py-16 bg-black h-auto; 
        & h3 {
         @apply text-center md:mb-16
        }

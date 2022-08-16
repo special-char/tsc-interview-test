@@ -22,6 +22,12 @@ module.exports = {
       "image": '3 / 2',
       "square": '1 / 1',
     },
+    container: {
+      center: true,
+      screens: {
+        "sm": '1520px',
+      },
+    },
     extend: {},
   },
   plugins: [

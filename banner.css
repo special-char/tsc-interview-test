@@ -1,6 +1,6 @@
 @layer components {
     #banner {
-        @apply -z-20 bg-secondary lg:px-16 xl:px-56 relative;
+        @apply container -z-20 bg-secondary lg:px-16 xl:px-56 relative;
         & div.banner_dot1 {
             @apply absolute w-2 md:w-3 aspect-square  bg-secondary1 top-[40%] md:top-1/3 left-7 rounded-full;
         }
@@ -11,12 +11,12 @@
             @apply absolute w-2 md:w-3 aspect-square  bg-secondary1 top-1/2 md:top-[43%] left-7 rounded-full;
         }
         &  div.banner_wrapper {
-        @apply z-0 p-12 sm:p-40 lg:p-0 h-auto md:h-screen relative flex flex-col gap-5  justify-center items-center md:items-start;
+        @apply z-0 p-12 sm:p-40 lg:py-40 lg:pl-10 lg:pr-80 max-w-[400px] h-auto; 
         & span {
-            @apply text-[10px] tracking-[15px];
+            @apply text-[10px] tracking-[15px] text-left;
         }
         & div.banner_wrapper_image {
-            @apply h-screen -z-10 absolute top-0 right-0 overflow-hidden opacity-30 md:opacity-70 lg:opacity-100;
+            @apply -z-10 absolute top-0 right-[5%] overflow-hidden opacity-30 md:opacity-70 lg:opacity-100;
             & img {
                 @apply overflow-hidden;
             }
@@ -24,7 +24,8 @@
     }
 }
 #profession {
-    @apply z-0 h-auto flex flex-wrap;
+    @apply container z-0 h-auto flex flex-wrap;
+
     & div.pro_content {
         @apply z-0 w-full md:basis-2/6  p-6 sm:p-8 md:p-10 lg:p-14 flex xl:flex-nowrap gap-5 lg:gap-8;
             & div.pro_content_icon {

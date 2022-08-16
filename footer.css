@@ -1,6 +1,6 @@
 @layer components {
     #footer {
-        @apply h-auto py-14 px-20 bg-black;
+        @apply container h-auto py-14 px-20 bg-black;
        & div.footer_wrapper {
         @apply flex justify-evenly items-center flex-wrap gap-5 lg:gap-0;
         & nav.footer_nav {

@@ -1,7 +1,7 @@
 @layer components {
     #contacts {
         &>div.contact_wrapper {
-            @apply w-full h-full flex flex-col-reverse md:flex-row justify-center;
+            @apply container flex flex-col-reverse md:flex-row justify-center;
 
             & div.contact_image {
                 @apply h-full w-full md:basis-1/2;
