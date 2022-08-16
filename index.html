@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <link rel="icon" href="../images/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Vite App</title>
+  </head>
+ 
+  <body>
+    <main id="main-page" class=" h-[100vh] w-[100%] overflow-hidden relative">
+      <section  id="header-sec">
+    <header>
+      <nav class="p-5 bg-white shadow lg:bg-slate-300 lg:flex lg:items-center lg:justify-between">
+        <div class="flex justify-between">
+          <div>
+          <img class="inline" src="./public/images/logo.png"/>
+          <span class="text-2xl font-sans"><b>Deep</b>Digital</span>
+          </div>
+          <div class="flex items-center md:hidden ">
+            <button class="outline-none mobile-menu-button ">
+              <svg
+                class="w-6 h-6 text-gray-500 justify-items-end"
+                x-show="!showMenu"
+
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+           
+          </div>
+        </div>
+        <div class="justify-between opacity-0 md:opacity-100">
+        <ul class=" list-disc md:visible md:flex md:items-center md:static absolute md:bg-slate-300  bg-white w-full left-0">
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-sm hover:text-cyan-500 duration-200">HOME</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-sm hover:text-cyan-500 duration-200">ABOUT</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-sm hover:text-cyan-500 duration-200">SERVICES</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-sm hover:text-cyan-500 duration-200">WORKS</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-sm hover:text-cyan-500 duration-200">PAGES</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-sm hover:text-cyan-500 duration-200">BLOGS</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-sm hover:text-cyan-500 duration-200">CONTACTS</a>
+          </li>
+        </ul>
+        </div>
+      </nav>
+    <section id="header">
+     <img src="./images/slider-1.png" alt="" class="opacity-30 overflow-hidden h-full w-full absolute lg:opacity-100 lg:ml-[600px] lg:w-auto  lg:-mt-16 ">
+        <div class="mt-36 text-center md:text-left md:ml-96 lg:ml-80  relative">
+          <p class="mb-7">GLOBAL TRENDS</p>
+          <h1 class="main-h1 mb-20 text-6xl md:text-7xl line-clamp-2"><b>Our Goal<br> is Success</b></h1>
+          <a href="#" class=" py-6 px-10 border-4 border-pink-600 rounded-full mb-9">Request a qoute</a>
+
+        </div>
+    </section>
+  </header>
+ </section>
+</main>
+<section>
+ <div class="md:flex md:text-sm">
+    <div class="bg-[#fb4c7b] items-center text-center flex-col ">
+      <div class="inline-flex gap-4 justify-center  mt-5 ">
+       <img src="./public/images/white-icon.png" class="">
+       <!-- <div class="flex-col mx-10 my-10 text-center"> -->
+       <h2 class="text-2xl mt-6 font-sans md:text-lg"><b>Analitics $ Data</b></h2>
+      </div>
+      <p class="font-sans text-lg md:text-sm text-white text-center mx-5 pr-4 pb-12 ml-28 md:pb-4 md:mx-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, nulla! 
+        .</p>
+    </div>
+  
+   <div class="bg-gray-300 items-center text-center flex-col ">
+     <div class="inline-flex gap-4 justify-center  mt-5">
+        <img src="./public/images/color-icon.png" class="">
+        <!-- <div class="flex-col mx-10 my-10"> -->
+        <h2 class="text-xl mt-6 font-sans md:text-lg"><b>Internet of Things</b></h2>
+     </div>
+       <p class="font-sans text-lg md:text-sm text-black text-center mx-5 pr-4 pb-12 ml-28 md:pb-4 md:mx-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, nulla! 
+      </p>
+    </div>
+   <div class="bg-white items-center text-center flex-col md:text-center">
+      <div class="inline-flex gap-4 justify-center  mt-5">
+       <img src="./public/images/color-icon2.png" class="">
+       <!-- <div class="flex-col mx-10 my-10"> -->
+       <h2 class="text-xl mt-6 font-sans md:text-lg"><b>Machine Laerning</b></h2>     </div>
+      <p class="font-sans text-lg md:text-sm text-black md:text-center mx-5 pr-4 pb-12 ml-28 md:pb-4 md:mx-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, nulla! 
+      </p>
+   </div>
+ </div>
+</section>
+<section class="bg-[#2c3848]">
+  <div class="md:flex  ">
+    <div >
+      <img src="./images/home3_alt_half_media1.jpg" class="w-50%"  alt="">
+    </div>
+    <div class=" text-white md:w-1/2 ml-4 mr-4 md:ml-12 md:mr-12 bg-[url('./images/texture.png')]  pb-16  "> 
+      <h3 class="text-4xl mb-7 pt-16">Who We Are</h3>
+      <p class="mb-10 mx-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro aperiam tempora cum neque cupiditate aut ipsam. Atque, quae ut illo rerum ea quod unde maiores expedita exercitationem  </p>
+      <p class="mb-12 pb-10 text-gray-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, praesentium laudantium natus placeat necessitatibus ipsa cumque reprehenderit ea nihil culpa. Vel cum, doloribus, recusandae atque illum iste, aperiam nam esse distinctio commodi quidem corrupti obcaecati repudiandae exercitationem! Adipisci, eligendi laboriosam error distinctio tempora sit harum laudantium ab aut nulla quam.</p>
+      <a href="#" class=" py-6 px-10 border-4 text-xs border-pink-600 rounded-full mt-10">ABOUT US</a>
+    </div>
+  </div>  
+</section>
+<section id="milestone" class="h-full w-[100%] bg-slate-100">
+  <div>
+    <h2 class="font-sans text-center pt-9 text-3xl mx-5"><b>Our Milestones</b></h2>
+    <p class="font-thin text-lg text-center mx-4 my-6 line-clamp-3">Getting online is easy. Succeeding online is different story.
+      You 'll need more than juast a beautiful website to stand on these days.
+    </p>
+  </div>
+  <div class="mx-auto w-full">
+    <div class="relative p-10 h-full">
+      <div class=" border-dashed absolute border-opacity-40 border-gray-700 h-28 border" style="left: 50%"></div>
+      <div class="flex-col text-center mt-6 md:flex-row md:flex md:ml-64 md:justify-center">
+        <h2 class="text-red-600 text-3xl font-semibold"><b>2010</b></h2>
+        <img src="./public/images/img_9-600x600.jpg" class="rounded-full h-32 ml-16">
+        <h4 class="font-sans text-2xl md:ml-5">Strategy</h4>
+        <p class="mt-9 mx-4 line-clamp-2  md:w-72">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, odio. </p>
+      </div>
+      <div class=" border-dashed absolute border-opacity-40 border-gray-700 h-28 border md:mr-7" style="left: 50%"></div>
+      <div class="flex-col text-center mt-6 md:flex-row-reverse md:flex md:justify-center md:mr-96 md:gap-0">
+        <h2 class="text-green-400 text-3xl font-semibold md:ml-10 "><b>2012</b></h2>
+        <img src="./public/images/img_3-600x600.jpg" class="rounded-full h-32 ml-16  md:ml-28">
+        <h4 class="font-sans text-2xl">Design</h4>
+        <p class="mt-9  line-clamp-1 md:w-72 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, odio. </p>
+      </div>
+      <div class=" border-dashed absolute border-opacity-40 border-gray-700 h-28 border" style="left: 50%"></div>
+      <div class="flex-col text-center mt-6 md:flex-row md:flex md:ml-64 md:justify-center">
+        <h2 class="text-cyan-500 text-3xl font-semibold"><b>2016</b></h2>
+        <img src="./public/images/img_8-600x600.jpg" class="rounded-full h-32 ml-16">
+        <h4 class="font-sans text-2xl md:ml-5">Develop</h4>
+        <p class="mt-9 mx-4 line-clamp-2 md:w-72 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, odio. </p>
+      </div>
+      <div class=" border-dashed absolute border-opacity-40 border-gray-700 h-28 border" style="left: 50%"></div>
+      <div class="flex-col text-center mt-6 md:flex-row-reverse md:flex md:mr-96 md:gap-0">
+        <h2 class="text-orange-600 text-3xl font-semibold md:"><b>2019</b></h2>
+        <img src="./public/images/img_2-600x600.jpg" class="rounded-full h-32 ml-16 md:mr-72 md:ml-0">
+        <h4 class="font-sans text-2xl md:mr-24">Support</h4>
+        <p class="mt-9 mx-4 line-clamp-1 md:w-72">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, odio. </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="h-[100vh] bg-[#2c3848] bg-[url('./images/texture.png')]">
+  <h2 class="font-sans text-center pt-28 text-3xl md:text-6xl mx-5 text-white"><b>Our Projects</b></h2>
+  <div class="flex text-center flex-col md:flex md:flex-row justify-evenly mt-10 md:mt-0 text-xl bg-[#2c3848]">
+    <div class="mt-6 md:mt-6  ">
+      <ul class="  flex flex-wrap justify-center line-clamp-2 items-center md:mt-10  text-white  text-[10px]    left-0 w-auto">
+        <li class=" mx-2 md:mx-7  my-0 list-none">
+          <a href="#" class="text-[10px] md:text-[18px] text-pink-700 hover:text-pink-600 duration-200">ALL</a>
+        </li>
+        <li class="  mx-2 md:mx-7 my-6 md:my-0">
+          <a href="#" class="text-[10px] md:text-[18px] hover:text-pink-600 duration-200">WEB DESIGN</a>
+        </li>
+        <li class="mx-2 md:mx-7 my-6 md:my-0">
+          <a href="#" class="text-[10px] md:text-[18px] hover:text-pink-600 duration-200">ANVISMENT</a>
+        </li>
+        <li class="mx-2 md:mx-7 my-6 md:my-0">
+          <a href="#" class="text-[10px] md:text-[18px] hover:text-pink-600 duration-200">LOGO DESIGN</a>
+        </li>
+        <li class="mx-2 md:mx-7 my-6 md:my-0">
+          <a href="#" class="text-[10px] md:text-[18px] hover:text-pink-600 duration-200">BRANDING</a>
+        </li>
+        <li class="mx-2 md:mx-7 my-6 md:my-0">
+          <a href="#" class="text-[10px] md:text-[18px] hover:text-pink-600 duration-200">PHPTO</a>
+        </li>
+        <li class="mx-2 md:mx-7 my-6 md:my-0">
+          <a href="#" class="text-[10px] md:text-[18px] hover:text-pink-600 duration-200">DESIGN</a>
+        </li>
+      </ul>
+   </div>
+  </div>
+  <div class="flex-row flex md:justify-between md:gap-4 md:mt-20  overflow-hidden">
+    <div class="w-screen md:w-auto"><img src="./public/images/img_19-1170x780.jpg" class="  "></div>
+    <div class="w-0 md:w-auto"><img src="./public/images/img_15-1170x780.jpg" class=""></div>
+    <div class="w-0 md:w-auto"><img src="./public/images/img_16-1170x780.jpg" class=""></div>
+    <div class="w-0 md:w-auto"><img src="./public/images/img_18-1170x780.jpg" class=""></div>
+    <div class="w-0 md:w-auto"><img src="./public/images/img_17-1170x780.jpg" class=""></div>
+
+  </div>
+  <div class="mt-20 items-center text-center px-14 ">
+    <a href="#" class=" py-6 px-8 border-4 my-6 text-sm md:text-lg text-white border-pink-600 rounded-full   mr-4">ALL  PROJECTS</a>
+
+  </div>
+
+
+
+
+</section>
+  <section>
+    <div class="md:flex md:flex-row-reverse md:justify-between">
+      <img src="./public/images/home3_alt_half_media3.jpg" class="w-full md:w-[50%] ">
+    
+      <div class="bg-white w-full h-[100%] md:w-[50%] md: ">
+        <h3 class="font-sans text-3xl pt-7 pl-8">Contact Us</h3>
+        <form class="mx-8">
+          
+<input type="text" id="disabled-input-1"  class="mb-6 mt-6 bg-gray-100 border border-gray-300 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 cursor-not-allowed dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500 font-mono" placeholder="N A M E" >
+<input type="text" id="disabled-input-2" aria-label="COMPANY" class="mb-6 bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 cursor-not-allowed dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500 font-mono" placeholder="C O M P A N Y">
+<input type="email" id="disabled-input-3" aria-label="EMAIL" class="mb-6 bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 cursor-not-allowed dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500 font-mono" placeholder="E M A I L">
+<input type="tel" id="disabled-input-4" aria-label="PHONE NUMBER" class="mb-6 bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 cursor-not-allowed dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500 font-mono" placeholder="P H O N E  N U M B E R">
+<!-- <input type="" id="disabled-input" aria-label="NAME" class="mb-6 bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 cursor-not-allowed dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500 font-mono" value="N A M E" disabled=""> -->
+<textarea id="message" rows="4" class="block p-2.5 w-full mb-9 text-sm text-black bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 font-mono" placeholder="Y O U R  M E S S A G E"></textarea>
+<a href="#" class=" py-6 px-4 border-4 border-pink-600 rounded-full mb-9 mr-4">S E N D  M E S S A G E</a>
+
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+  </body>
+    <footer class="bg-[#2c3848] mt-9 md:mt-0 ">
+    <div class="flex text-center flex-col md:flex md:flex-row justify-evenly mt-10 md:mt-0 text-xl bg-[#2c3848]">
+      <div class="mt-6 md:mt-0">
+        <ul class=" list-disc flex flex-wrap justify-center line-clamp-2 items-center   text-white  text-[10px]    left-0 w-auto">
+          <li class="mx-4  my-0 list-none">
+            <a href="#" class="text-[10px] text-pink-700 hover:text-pink-600 duration-200">HOME</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-[10px] hover:text-pink-600 duration-200">ABOUT</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-[10px] hover:text-pink-600 duration-200">SERVICES</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-[10px] hover:text-pink-600 duration-200">WORKS</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-[10px] hover:text-pink-600 duration-200">PAGES</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-[10px] hover:text-pink-600 duration-200">BLOGS</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-[10px] hover:text-pink-600 duration-200">CONTACTS</a>
+          </li>
+        </ul>
+     </div>
+     <div class="text-white text-2xl md:text-xl mb-10"><span class="text-pink-600">1-800</span>-123-4567</div>
+
+      
+    </div>
+  </footer>  
+  
+</html>
