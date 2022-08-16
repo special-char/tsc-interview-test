@@ -1,0 +1,29 @@
+@layer components {
+    #imgcontent {
+        @apply lg:h-screen ;
+
+        &>div {
+            @apply flex flex-wrap;
+
+            &>div {
+                @apply lg:w-1/2;
+
+            }
+            &>.content__wrapper {
+                @apply flex-col bg-slate-800 text-white lg:pl-32 lg:pr-24 pt-28 pb-10;
+            }
+
+            &>div>h2 {
+                @apply mb-6 text-5xl;
+            }
+
+            &>div>p {
+                @apply mb-10;
+            }
+
+            &>div>button {
+                @apply border-2 border-pink-400 pl-10 pr-10 pt-5 pb-5 rounded-3xl text-xs font-semibold;
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+@layer components{
+    .header{
+        @apply bg-[#d5d7db] h-32;
+        & > div {
+            @apply flex justify-between items-center flex-shrink-0;
+            & > div {
+                @apply flex items-center ml-20 mt-10 gap-3;
+                
+                & > h3{
+                    @apply  font-medium text-3xl;
+                }
+            }
+            & > nav > ul{
+                @apply flex items-center gap-24 mr-24 font-semibold text-xs mt-8 flex-wrap list-disc;
+            }
+        }
+    }
+}
