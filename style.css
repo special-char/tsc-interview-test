@@ -1,0 +1,32 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+@import "./header.css";
+@import "./main.css";
+@import "./card.css";
+@import "./img_side_content.css";
+@import "./img_center_content.css";
+
+
+@import "tailwindcss/utilities";
+
+
+/* .banner-1{
+  height: 120px;
+} */
+html,body {
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+}
+
+.banner-2{
+  height: calc(100vh - 128px);
+}
+.banner-3{
+  height: 300px;
+}
+
+.spacing{
+  letter-spacing: .65rem;
+}

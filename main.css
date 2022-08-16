@@ -1,0 +1,19 @@
+@layer components {
+    #main {
+        @apply bg-[#d5d7db] banner-2 overflow-hidden relative;
+
+        &>div {
+            @apply flex container m-auto flex-wrap justify-around;
+
+            &>div {
+                &>div>h1 {
+                    @apply text-7xl font-bold;
+                }
+            }
+
+            &>div>button {
+                @apply border-2 border-pink-400 p-5 rounded-3xl text-xs font-semibold;
+            }
+        }
+    }
+}
