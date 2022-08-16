@@ -1,0 +1,36 @@
+@layer components{
+    #hello{
+        @apply h-auto ;
+
+        &>.hello_container{
+            @apply bg-slate-800 flex flex-wrap justify-center items-center;
+
+            &>.hello_image{
+                @apply aspect-eimage flex-shrink-0 w-full md:aspect-dimage md:w-1/2 lg:aspect-square;
+
+                &>img{
+                    @apply w-full h-full ;
+                }
+            }
+
+            &>.hello_content{
+                @apply pl-10 pr-3 flex-1 basis-1/2 text-left;
+
+                &>h3{
+                    @apply text-3xl mb-10 sm:text-5xl sm:mt-4 font-sans font-semibold text-white ;
+                }
+                &>.para1{
+                    @apply w-full max-w-md mb-10 text-white font-sans text-base;
+                }
+
+                &>.para2{
+                    @apply w-full max-w-md mb-10 text-gray-500 font-sans text-base;
+                }
+                &>button{
+                    @apply text-white  border-4 rounded-full border-red-400 px-6 py-3 text-sm font-sans font-semibold hover:bg-red-400 hover:border-gray-800 ;
+                }
+            }
+
+        }
+    }
+}

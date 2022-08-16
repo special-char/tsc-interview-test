@@ -1,0 +1,18 @@
+@layer components{
+    #footer{
+        @apply h-40 bg-gray-800;
+
+       &>footer{
+
+        &>nav{
+
+            &>ul{
+                @apply flex justify-center  content-center py-20 gap-5;
+                &>li{
+                    @apply  text-white;
+                }
+            }
+        }
+       }
+    }
+}
