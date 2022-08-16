@@ -27,13 +27,13 @@
             & > nav.header_nav {
                 @apply hidden lg:block basis-1/2;
                 & > ul.header_nav_content {
-                    @apply flex gap-10 font-normal text-sm list-disc;   
+                    @apply flex gap-10 text-sm list-disc;   
                    
                     & li {
                         @apply px-3 first:list-none text-xs;
 
                         & a {
-                            @apply font-extralight text-xs
+                            @apply font-normal text-[10px]
                         }
                     }
                 }
