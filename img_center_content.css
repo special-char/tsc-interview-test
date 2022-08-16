@@ -1,0 +1,14 @@
+@layer components{
+    #img_center_content{
+        @apply flex flex-col items-center justify-center bg-slate-800 h-screen;
+        & > h2{
+            @apply text-white text-4xl pt-32 pb-20 font-black;
+        }
+        & > nav > ul{
+            @apply flex justify-center items-center lg:gap-24 font-semibold text-xs text-white flex-wrap pb-20 gap-10 mx-8;
+        }
+        & > div > button{
+            @apply border-2 border-pink-400 px-10 py-5 rounded-3xl text-xs font-semibold text-white;
+        }
+    }
+}
