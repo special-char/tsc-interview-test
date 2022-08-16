@@ -1,0 +1,43 @@
+@layer components{
+    #ContactUs{
+        &>.ContactUs__container{
+            @apply container flex flex-col lg:flex-row-reverse; 
+            &>.ContactUs__form{
+                @apply flex flex-col  justify-center items-start sm:items-center lg:items-start sm:px-10 py-10 flex-1 basis-1/2;
+
+                &>h3{
+                    @apply text-3xl font-sans font-semibold mb-5;
+                }
+                &>form{
+                    
+                    &>.form_name{
+                        @apply w-full sm:flex sm:gap-2;
+                        &>input{
+                            @apply w-full border-0 mt-3  bg-gray-100 font-sans font-semibold;
+                        }
+                    }
+                    &>.form_email{
+                        @apply w-full sm:flex sm:gap-2;
+                        &>input{
+                            @apply w-full border-0 mt-3  bg-gray-100 font-sans font-semibold;
+                        }
+                    }
+                    &>textarea{
+                        @apply w-full border-0 mt-3 bg-gray-100 font-sans font-semibold sm:ml-2;
+                    }
+                }
+                &>button{
+                    @apply mt-5 border-4 rounded-full border-red-400 px-6 py-3 text-sm font-sans font-semibold ;
+                }
+                
+            }
+            &>.ContactUs__image{
+                @apply  lg:aspect-square lg:w-full flex-1 basis-1/2;
+
+                &>img{
+                    @apply w-full h-full;
+                }
+            }
+        }
+    }
+}
