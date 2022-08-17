@@ -1,6 +1,6 @@
 @layer components{
     #ourgoals{
-        @apply sm:bg-gray-200 sm:pt-10;
+        @apply container sm:bg-gray-200 sm:pt-10;
 
         & > .ourgoals__goal1{
             @apply hidden   sm:container sm:flex sm:flex-wrap sm:items-center sm:justify-center;

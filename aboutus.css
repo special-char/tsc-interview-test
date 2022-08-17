@@ -1,7 +1,7 @@
 @layer components {
 
     #aboutus {
-        @apply bg-gray-200  h-auto;
+        @apply container bg-gray-200  h-auto;
 
         & > .aboutus__about {
             @apply container flex flex-wrap;
