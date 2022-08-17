@@ -1,4 +1,4 @@
-@layer components {
+    @layer components {
     #contacts {
         &>div.contact_wrapper {
             @apply container flex flex-col-reverse md:flex-row justify-center;
