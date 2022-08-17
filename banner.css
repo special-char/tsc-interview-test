@@ -11,7 +11,7 @@
             @apply absolute w-2 md:w-3 aspect-square  bg-secondary1 top-1/2 md:top-[43%] left-7 rounded-full;
         }
         &  div.banner_wrapper {
-        @apply z-0 py-12 px-32 sm:p-40 lg:py-52 lg:pl-10 lg:pr-80 h-auto; 
+        @apply z-0 p-12 sm:p-40 lg:py-52 lg:pl-10 lg:pr-80 h-auto flex flex-col items-center gap-3 md:items-start; 
         & span {
             @apply text-[10px] tracking-[15px] text-left;
         }
