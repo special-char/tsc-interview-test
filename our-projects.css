@@ -1,0 +1,43 @@
+@layer components {
+    #our-projects{
+        @apply py-16 bg-gradient-radial from-gray-800 to-secondary;
+
+        & > div.container{
+            @apply bg-[url('.\public\images\texture.png')] bg-repeat flex flex-col items-center gap-10;
+ 
+                & ul {
+                    @apply flex flex-wrap justify-center gap-8 text-white text-xs tracking-widest mb-12;
+        
+                    & li {
+                        @apply first:text-primary text-white;
+                    }
+                }
+
+                & > div.project__images__wrapper{
+                    @apply overflow-hidden relative grid grid-cols-1 grid-rows-1 md:grid-cols-3 lg:grid-cols-5 ;
+                
+                    & div.project__image:nth-child(2) {
+                        @apply hidden sm:block;
+                    }
+                    & div.project__image:nth-child(3) {
+                        @apply hidden md:block;
+                    }
+                    & div.project__image:nth-child(4) {
+                        @apply hidden lg:block;
+                    }
+                    & div.project__image:nth-child(5) {
+                        @apply hidden lg:block;
+                    }
+                    & div.image__scroller1 {
+                        @apply absolute aspect-square w-[4.5rem] bg-primary z-10 top-[35%] sm:top-[35%] md:top-[31%] lg:top-[26%] xl:top-[30%] -left-10 rounded-full;
+                    }
+                    & div.image__scroller2 {
+                        @apply absolute aspect-square flex items-center justify-center w-[4.5rem] bg-primary z-10 top-[35%] sm:top-[35%] md:top-[31%] lg:top-[26%] xl:top-[30%] -right-10 rounded-full;
+                      & > span{
+                        @apply text-white z-20;
+                      }
+                    }
+                }
+        }
+    }
+}

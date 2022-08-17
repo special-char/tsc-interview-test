@@ -1,0 +1,61 @@
+@layer components{
+    #who-we-are{
+        
+        & > div.container{
+            @apply p-0;
+            & > div.card__wrapper{
+                @apply lg:flex;
+
+                & > div.card{
+                    @apply flex gap-4 p-20 text-white bg-white;
+
+                    & > img{
+                        @apply h-10;
+                    }
+                    
+                    & > div.content{
+                        @apply flex flex-col gap-2;
+
+                        & > h3{
+                            @apply text-black;
+                        }
+                        & > p{
+                            @apply text-gray-500;
+                        }
+                    }
+                }
+                & > div.card__pink {
+                    @apply bg-primary;
+                    & > div.content{
+
+                        & > p{
+                            @apply text-white;
+                        }
+                }
+            }
+                & > div.card__gray{
+                    @apply bg-gray-200;
+                }
+                
+            }
+
+            &>div.whoweare{
+                @apply bg-gradient-radial from-gray-800 to-gray-900 relative flex flex-wrap lg:flex-nowrap;
+
+                    & > div.img{
+                        @apply md:w-1/2;
+                    }
+                    &>div.content__wrapper{
+                        @apply bg-[url('.\public\images\texture.png')] bg-repeat text-white flex flex-col flex-wrap py-20 px-5 justify-center gap-10 lg:p-20 md:w-1/2;
+                        & > img{
+                            @apply absolute;
+                        }
+
+                        & > p.gray{
+                            @apply text-gray-500;
+                        }
+                    }
+            }
+        }
+    }
+}

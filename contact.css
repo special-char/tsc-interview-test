@@ -1,0 +1,35 @@
+@layer components {
+
+    #contact{
+        
+        & > div.contact__wrapper{
+            @apply w-full h-full flex container p-0 flex-wrap-reverse;
+
+            & > div.form{
+                @apply w-full h-full  flex flex-col gap-10 pl-3 py-10 md:p-20 lg:w-1/2;
+                
+                & > h3{
+                    @apply text-secondary text-3xl; 
+                }
+                & >form{
+                    @apply py-10 text-xs font-medium flex flex-col gap-7 md:grid grid-cols-2 md:grid-rows-3 lg:grid-rows-3 md:gap-4;
+                    
+                    & > input{
+                        @apply block w-full p-1 rounded-sm bg-gray-100;
+                    }
+                    & > textarea{
+                        @apply col-span-2 row-span-3 p-2 rounded-sm bg-gray-100;
+                    }
+                    & > label{
+                        @apply hidden;
+                    }
+                }
+            }
+
+            & > div.contact__image{
+                @apply h-full lg:w-1/2;
+            }
+
+        }
+    }
+}
