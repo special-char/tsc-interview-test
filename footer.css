@@ -1,0 +1,32 @@
+@layer components{
+    #footer{
+        @apply container bg-gray-800;
+
+        & > .footer__content{
+            @apply py-10 flex flex-wrap items-center justify-around flex-1 gap-5;
+
+            & > nav{
+
+                & > ul{
+                    @apply flex flex-wrap gap-10 lg:list-disc;
+
+                    & > li{
+                        @apply text-white text-center text-sm font-sans px-2 first:list-none;
+    
+                        & > a{
+                            @apply font-sans font-medium;
+                        }
+                    }
+                } 
+            }
+
+            & > h3{
+                @apply text-white;
+
+                & > span{
+                    @apply text-pink-600;
+                }
+            }
+        }
+    }
+}

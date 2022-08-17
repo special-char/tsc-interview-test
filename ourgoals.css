@@ -1,0 +1,57 @@
+@layer components{
+    #ourgoals{
+        @apply container sm:bg-gray-200 sm:pt-10;
+
+        & > .ourgoals__goal1{
+            @apply hidden   sm:container sm:flex sm:flex-wrap sm:items-center sm:justify-center;
+
+            & > .ourgoals__content{
+                @apply max-w-lg flex flex-col justify-center items-start;
+
+                & > h2{
+                    @apply text-base mb-5 tracking-[0.7rem];
+                }
+
+                &>h3{
+                    @apply mb-7 text-7xl font-sans font-black;
+                }
+
+                &>button{
+                    @apply  border-4 rounded-full border-red-400 px-6 py-3 text-sm font-sans hover:bg-red-400 hover:text-black;
+                }
+            }
+
+            & > .ourgoals__img{
+                @apply w-[640px] h-[720px] overflow-hidden;
+            }
+        }
+
+        & > .ourgoals__goal2{
+            @apply z-0 relative aspect-image w-full py-6 bg-gray-200 bg-opacity-50 sm:hidden  overflow-hidden;
+
+            & > img{
+                @apply z-0;
+            }
+
+            & > .bg-wrap{
+                @apply absolute inset-0 z-10 bg-gray-200 bg-opacity-75;
+            }
+
+            & > .content{
+                @apply inset-0 z-20 flex flex-1 flex-col justify-center items-center absolute;
+
+                & > h2{
+                    @apply text-base text-black mb-4 sm:mb-6 tracking-[0.8rem];
+                }
+
+                &>h3{
+                    @apply mb-7 text-7xl font-sans font-black;
+                }
+
+                &>button{
+                    @apply border-4 rounded-full border-red-400 px-6 py-3 text-sm font-sans hover:bg-red-400 hover:text-black;
+                }
+            }
+        }
+    }
+}

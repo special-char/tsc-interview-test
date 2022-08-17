@@ -1,0 +1,37 @@
+@layer components {
+
+    #aboutus {
+        @apply container bg-gray-200  h-auto;
+
+        & > .aboutus__about {
+            @apply container flex flex-wrap;
+
+            & > .aboutus__card{
+                @apply flex gap-2 py-20 sm:py-16 justify-center;
+
+                & > .card__content{
+
+                    & > h3{
+                        @apply text-2xl mb-4 font-sans font-semibold;
+                    }
+                    & > p{
+                        @apply text-base font-sans line-clamp-3;
+                    }
+                }                
+            }
+            & > .card1{
+                @apply flex-1 basis-96 bg-red-400 px-4;
+
+                & > p{
+                    @apply text-white;
+                }
+            }
+            & > .card2{
+                @apply flex-1 basis-96 bg-gray-200 px-4;
+            }
+            & > .card3{
+                @apply flex-1 basis-96 bg-white px-4;
+            }
+        }
+    }
+}

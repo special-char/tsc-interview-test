@@ -1,0 +1,33 @@
+@layer components{
+    #ourprojects{
+        @apply container h-auto bg-gray-800;
+
+        & > .ourprojects__project{
+            @apply flex flex-col container justify-center items-center py-16;
+
+            & > h3{
+                @apply text-white font-sans text-4xl font-semibold mb-16;
+            }
+
+            & > nav{
+                @apply mb-16;
+
+                & > ul{
+                    @apply flex flex-wrap justify-center gap-9;
+
+                    & > li{
+                        @apply text-white font-sans font-semibold hover:text-pink-600;
+                    }
+                }
+            }
+
+            & > .ourprojects__image{
+                @apply aspect-image mb-8 w-full sm:w-4/5 md:max-h-48 md:w-full md:grid md:grid-cols-5 md:grid-rows-1;
+            }
+
+            &>button{
+                @apply border-4 rounded-full border-pink-600 px-6 py-3 text-sm text-white font-sans hover:bg-pink-600 hover:text-black;
+            }
+        }
+    }
+}

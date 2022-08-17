@@ -1,0 +1,58 @@
+@layer components{
+    
+    #header{
+        @apply overflow-hidden;
+
+        & > .header__container{
+            @apply flex container lg:bg-gray-200 justify-between px-4 lg:px-20 items-center h-20;
+
+            & > .header__logo{
+                @apply flex gap-3 items-center;
+
+                & > img{
+                    @apply w-10 h-10;
+                }
+
+                &>.name {
+                    @apply text-2xl flex items-center lg:hidden;
+
+                    &>.name2 {
+                        @apply font-sans font-semibold;
+                    }
+                }
+
+                &>.name1{
+                    @apply text-2xl font-sans font-semibold hidden lg:block;
+                }
+            }
+
+            &>.header__navbtn {
+                @apply  w-8 h-8 lg:hidden;
+
+                &>a {
+                    &>.line {
+                        @apply bg-black border-2 border-black  mt-2;
+                    }
+                    
+                }
+            }
+
+            &>nav{
+                @apply hidden lg:block;
+
+                &>ul{
+                    @apply flex gap-8 list-disc;
+                    
+                    &>li{
+                        @apply px-2 first:list-none;
+
+                        &>a{
+                            @apply font-sans font-medium;
+                        }
+                    }        
+                }
+            }
+        }
+    }
+
+}
