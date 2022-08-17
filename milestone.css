@@ -1,0 +1,38 @@
+@layer components {
+  #milestones {
+    @apply bg-white z-0 container py-16;
+    & h3 {
+      @apply text-black text-center;
+    }
+    & > p {
+      @apply text-center px-5;
+    }
+    & div.milestone_wrapper {
+      @apply flex flex-col items-center  md:w-full lg:w-4/6 mx-auto;
+      & div.divider_wrapper {
+        @apply flex my-3 flex-col justify-center items-center  h-auto;
+        & div.divider {
+          @apply h-3 mb-1 max-w-[2px]  border-2 rounded-md border-secondary1 bg-secondary1;
+        }
+      }
+      & div.milestone_item {
+        @apply flex flex-wrap gap-4 lg:gap-0 xl:gap-4 w-full md:w-full md:gap-8 justify-center;
+      }
+      & div.milestone_item_num {
+        @apply w-4/5 md:max-w-[190px] md:basis-2/6 flex justify-center items-center text-5xl font-semibold;
+      }
+      & div.milestone_item_image {
+        @apply md:basis-2/6 flex justify-center items-center;
+        & img {
+          @apply w-2/5 md:max-w-[240px] md:w-3/5 mx-auto rounded-full border-solid p-2 border-secondary1 border-[5px];
+        }
+      }
+      & div.milestone_item_desc {
+        @apply w-4/5 md:max-w-[190px] md:basis-2/6 flex justify-center items-center md:items-start flex-col gap-3;
+        & p {
+          @apply mb-0 text-center md:text-start;
+        }
+      }
+    }
+  }
+}

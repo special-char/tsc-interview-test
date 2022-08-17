@@ -1,0 +1,29 @@
+@layer components {
+    #about {
+        &>div.about_wrapper {
+            @apply container md:flex flex-wrap justify-center;
+
+            & div.about_image {
+                @apply  h-full basis-1/2;
+
+                &>img {
+              }
+            }
+        
+
+        & div.about_desc {
+            @apply  pl-6 md:pl-6 pr-3 py-14 md:pt-10 md:pb-0 lg:py-14 flex-1 basis-1/2 text-left bg-black;
+
+          
+
+            & p {
+                @apply w-full max-w-md text-secondary  md:text-xs lg:text-base;
+            }
+
+            & p.small {
+                @apply w-full max-w-md md:text-xs lg:text-base text-primary;
+            }
+        }
+    }
+    }
+}

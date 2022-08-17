@@ -1,0 +1,20 @@
+@layer components {
+    .btn {
+        @apply py-5 px-7 border-solid border-pink border-[5px] rounded-full text-xs sm:text-sm;
+    }
+    .reverse {
+        @apply flex-row-reverse;
+    }
+    .green {
+        @apply text-green
+    }
+    .pink {
+        @apply text-pink
+    }
+    .orange {
+        @apply text-orange;
+    }
+    .lightblue {
+        @apply text-lightblue;
+    }
+}
