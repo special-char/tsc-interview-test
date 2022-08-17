@@ -6,7 +6,7 @@
             @apply w-full h-full flex container p-0 flex-wrap-reverse;
 
             & > div.form{
-                @apply w-full h-full  flex flex-col gap-10 pl-3 py-10 md:p-20 lg:w-1/2;
+                @apply w-full flex flex-col gap-10 pl-3 py-10 md:p-20 lg:w-1/2;
                 
                 & > h3{
                     @apply text-secondary text-3xl; 

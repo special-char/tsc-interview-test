@@ -1,6 +1,6 @@
 @layer components {
     #our-projects{
-        @apply py-16 bg-gradient-radial from-gray-800 to-secondary;
+        @apply container px-0 py-16 bg-gradient-radial from-gray-800 to-secondary;
 
         & > div.container{
             @apply bg-[url('.\public\images\texture.png')] bg-repeat flex flex-col items-center gap-10;
