@@ -1,0 +1,19 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "./header.css";
+@import "./page.css";
+@import "./about.css";
+@import "./hello.css";
+@import "./milestone.css";
+@import "./ourproject.css";
+@import "./contact.css";
+@import "./footer.css";
+
+
+
+
+
+
+
+

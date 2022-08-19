@@ -1,0 +1,58 @@
+@layer components{
+
+  #heading{
+    @apply  lg:bg-gray-200;
+
+    &>div{
+      @apply flex container justify-between  px-3 lg:px-28 items-center h-16;
+
+      &>div{
+        @apply flex gap-2 items-center;
+
+          &>img {
+            @apply w-10 h-10;
+          }
+        
+        &>.name{
+          @apply text-2xl flex  items-center lg:hidden;
+          &>.name_second{
+            
+            &>span{
+              @apply font-thin ;
+            }
+          }
+        }
+        &>.name_first{
+          @apply text-2xl font-sans font-semibold hidden lg:block;
+        }
+      }
+      &>.nav__bar{
+        @apply lg:hidden w-10 h-10;
+
+        &>a {
+          &>.line {
+              @apply bg-black border-2 border-black w-5 -m-1 mt-2;
+          }
+          
+      }
+      }
+      &>nav{
+        @apply hidden lg:block;
+        &>ul{
+            @apply flex gap-8 list-disc;
+            
+            &>li{
+                @apply pl-2 first:list-none;
+
+                &>a{
+                    @apply font-sans font-medium;
+                }
+            }    
+            
+            
+        }
+    }
+      }
+    }
+
+  }

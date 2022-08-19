@@ -1,0 +1,81 @@
+@layer components{
+    #milestone{
+        @apply py-10;
+
+        &>.milestone_content{
+            @apply flex flex-col justify-center items-center;
+
+            &>h3{
+                @apply font-sans text-4xl font-semibold;
+            }
+            &>p{
+                @apply text-center max-w-xl my-8 px-3;
+            }
+        }
+
+      
+
+        &>div{
+            
+            &>.milestone_line{
+                @apply flex my-3 flex-col justify-center items-center  h-auto ;
+                &>.line{
+                    @apply h-3 mb-1 max-w-[2px]  border-2 border-gray-200 bg-gray-200;
+                }
+            }
+       
+        &>.Milestone_card_left{
+            @apply flex flex-col justify-center items-center lg:flex-row-reverse lg:pr-[274px]  ;
+            &>.year{
+                @apply text-2xl font-sans text-red-500 mb-2 font-bold lg:mx-4;
+            }
+            &>.card_img{
+                @apply shadow-xl aspect-square w-28 py-1 border-2 px-1 rounded-full mb-1 overflow-hidden;
+
+                &>img{
+                    @apply rounded-full;
+                }
+            }
+            &>.card_desc{
+                @apply text-center py-3 lg:text-right lg:mx-4;
+
+                &>.title_name{
+                    @apply font-sans font-semibold text-2xl;
+                }
+                &>p{
+                    @apply mt-1 max-w-[330px] px-1;
+                }
+
+            }
+        }
+
+       
+
+        &>.Milestone_card_right{
+            @apply flex flex-col justify-center items-center lg:flex-row lg:pl-[274px]  ;
+            &>.year{
+                @apply text-2xl font-sans text-red-500 mb-2 font-bold lg:mx-4;
+            }
+            &>.card_img{
+                @apply shadow-xl aspect-square w-28 rounded-full mb-1 overflow-hidden border-2 py-1 px-1;
+
+                &>img{
+                    @apply rounded-full;
+                }
+            }
+            &>.card_desc{
+                @apply text-center py-3 lg:text-left lg:mx-4;
+
+                &>.title_name{
+                    @apply font-sans font-semibold text-2xl;
+                }
+                &>p{
+                    @apply mt-1 max-w-[330px] px-1;
+                }
+
+            }
+        }
+    }
+
+    }
+}
