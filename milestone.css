@@ -1,0 +1,70 @@
+@layer components {
+    #milestones {
+      @apply bg-white z-0 container py-16;
+      & h3 {
+        @apply text-black text-center text-3xl mb-10 xl:mb-10 lg:mb-3 md:mb-2 md:text-4xl lg:text-5xl font-sans font-semibold;
+      }
+      & > p {
+        @apply text-center px-5;
+        
+      }
+      & > p.small {
+            @apply mb-10 xl:mb-10 lg:mb-3 md:mb-2 md:pb-2 text-base text-gray-500;
+                 
+      }
+      & div.milestone_wrapper {
+        @apply flex flex-col items-center  md:w-full lg:w-4/6 mx-auto;
+        & div.divider_wrapper {
+          @apply flex my-3 flex-col justify-center items-center  h-auto;
+          & div.divider {
+            @apply h-3 mb-1 max-w-[2px]  border-2 rounded-md border-gray-300 bg-gray-300;
+          }
+        }
+        & div.milestone_item {
+          @apply flex flex-wrap gap-4 lg:gap-0 xl:gap-4 w-full md:w-full md:gap-8 justify-center;
+        }
+        & div.milestone_item_reverse{
+          @apply flex flex-wrap-reverse gap-4 lg:gap-0 xl:gap-4 w-full md:w-full md:gap-8 justify-center
+        }
+        & div.milestone_item_num_pink{
+          @apply w-4/5 md:max-w-[190px] md:basis-2/6 flex md:justify-end items-center text-5xl font-semibold text-pink-600 sm:justify-center justify-center;
+        }
+        & div.milestone_item_num_green{
+            @apply w-4/5 md:max-w-[190px] md:basis-2/6 flex md:justify-start items-center text-5xl font-semibold text-green-600 sm:justify-center justify-center;
+        }
+        & div.milestone_item_num_lightblue{
+            @apply w-4/5 md:max-w-[190px] md:basis-2/6 flex md:justify-end items-center text-5xl font-semibold text-blue-300 sm:justify-center justify-center;
+        }
+        & div.milestone_item_num_orange{
+            @apply w-4/5 md:max-w-[190px] md:basis-2/6 flex md:justify-start items-center text-5xl font-semibold text-orange-600 sm:justify-center justify-center;
+        }
+        & div.milestone_item_image {
+          @apply md:basis-2/6 flex justify-center items-center;
+          & img {
+            @apply w-2/5 md:max-w-[240px] md:w-3/5 mx-auto rounded-full border-solid p-2 border-gray-300 border-[5px];
+          }
+        }
+        & div.milestone_item_desc {
+          @apply w-4/5 md:max-w-[190px] md:basis-2/6 flex justify-center items-center md:items-start flex-col gap-3;
+         
+          & h4{
+            @apply text-lg sm:text-xl font-semibold;
+          }
+          & p.small {
+            @apply mb-0 text-center md:text-start  text-gray-500;
+          }
+        }
+        & div.milestone_item_desc_reverse {
+            @apply w-4/5 md:max-w-[190px] md:basis-2/6 flex justify-center items-center md:items-end flex-col gap-3;
+           
+            & h4{
+              @apply text-lg sm:text-xl font-semibold;
+            }
+            & p.small {
+              @apply mb-0 text-center md:text-end  text-gray-500;
+            }
+          }
+      }
+    }
+  }
+  
