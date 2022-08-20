@@ -1,0 +1,23 @@
+@layer components{
+    #footer {
+        @apply container bg-[url('.\public\images\texture.png')] h-auto py-16 px-20 bg-secondary;
+
+       & div.footer__wrapper {
+        @apply flex justify-evenly items-center flex-wrap gap-5 lg:gap-0;
+
+        & nav.footer__nav {
+            & ul {
+                @apply flex gap-5 md:list-disc text-xs flex-wrap justify-center items-center mb-8 md:mb-0;
+                & li {
+                    @apply first:list-none md:px-5 text-white;
+                }
+            }
+        }
+        & div.footer_contact {
+            & span.pink {
+             @apply text-primary;
+            }
+        }
+       }
+    }
+}

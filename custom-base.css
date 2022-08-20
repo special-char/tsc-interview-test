@@ -1,0 +1,36 @@
+@layer base {
+
+    body{
+        @apply text-base font-body font-normal;
+    }
+    
+    a {
+        @apply uppercase text-xs;
+      }
+
+    /* section {
+    @apply max-h-screen lg:h-screen;
+    } */
+
+    li{
+        @apply list-none;
+    }
+
+    p{
+        @apply text-sm;
+    }
+    h2{
+        @apply text-white text-4xl font-medium;
+    }
+
+    h3{
+        @apply font-medium text-2xl;
+    }
+    
+    h4{
+        @apply text-lg font-medium;
+    }
+    span{
+        @apply text-white;
+    }
+}

@@ -1,0 +1,15 @@
+@layer components {
+
+    .btn {
+        @apply min-w-fit py-4 px-12 max-w-fit rounded-full border-[3px] border-primary text-base font-medium;
+    }
+    .btn__white{
+        @apply text-white;
+    }
+    .btn__black{
+        @apply text-secondary;
+    }
+    .reverse{
+        @apply flex-row-reverse;
+    }
+}

@@ -1,0 +1,79 @@
+@layer components {
+    .mobile{
+        @apply container block lg:hidden h-fit p-4;
+        
+        & > div{
+            @apply flex justify-between items-center gap-2 flex-shrink;
+            & > div{
+                @apply flex justify-center items-center gap-3;
+
+                & > span{
+                    @apply text-black font-light text-4xl;
+
+                    & > strong{
+                        @apply font-semibold;
+                    }
+                }
+            }
+            & > nav{
+                
+                & > ul {
+                    @apply flex flex-col items-center mr-10 text-xs gap-1;
+
+                    & > li{
+                        @apply rounded-3xl pl-3 pr-3 pt-[2px] pb-[2px] bg-black;
+                    }
+                }
+            }
+        }
+    }
+    #land{
+    @apply container relative overflow-hidden bg-gradient-radial from-white to-gray-300 ;
+
+        & > div.container{
+            @apply pt-7;
+
+            & > header{
+                @apply hidden  lg:flex;
+
+                & > div.container{
+                    @apply flex justify-between ;
+
+                    & > div.logo{
+                    @apply flex items-center gap-3;
+
+                    & > span{
+                        @apply text-xl text-secondary font-medium;
+                    }
+                    }
+
+                    & > nav{
+                        @apply flex gap-14 items-center;
+
+                    }
+                }
+            }
+            & > div.container {
+                @apply  flex  justify-around;
+
+                & > div.content{
+                    @apply flex flex-col items-center my-10 text-center max-w-md z-10 lg:my-40 lg:text-start lg:items-start;
+
+                    & >h1 {
+                        @apply font-bold text-5xl text-secondary mb-10 lg:text-6xl ;
+                    }
+                    & > p{
+                        @apply tracking-[0.65rem];
+                    }
+                }
+
+                & > div.image{
+                    & > img{
+                    @apply absolute  right-0 opacity-50 md:right-48  md:h-[800px] md:opacity-100;
+                    }
+                }
+            }
+        }
+
+    }
+}
