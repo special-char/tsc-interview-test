@@ -1,0 +1,37 @@
+@layer components {
+    #WeAre {
+        &>div.WeAre_wrapper {
+            @apply container md:flex flex-wrap justify-center;
+
+            & div.WeAre_image {
+                @apply  h-full basis-1/2;
+
+             & img{
+                
+
+                }    
+                
+            }
+        
+
+        & div.WeAre_desc {
+            @apply  container pl-6 md:pl-16 pr-3 py-14 md:pt-0 md:pb-0  lg:py-14 lg:pt-0 lg:pb-0 flex-1 basis-1/2 text-left bg-black;
+
+          
+            & h3{
+                @apply text-3xl mb-10 mt-10 xl:mb-10 lg:mb-3 md:mb-2 md:text-4xl lg:text-5xl font-sans font-semibold text-white;
+            }
+            & p {
+                @apply w-full max-w-md text-gray-300  md:text-xs mb-10 md:mb-5 lg:text-base;
+            }
+
+            & p.WeAre_desc_dark {
+                @apply w-full max-w-md md:text-xs lg:text-base text-gray-500;
+            }
+            & .btn {
+                @apply py-5 px-7 border-solid border-pink-700 border-[5px] rounded-full text-white text-xs sm:text-sm;
+            }
+        }
+    }
+    }
+}
